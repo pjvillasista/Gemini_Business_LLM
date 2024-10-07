@@ -1,0 +1,26 @@
+-- @block 
+CREATE TABLE market_reviews (
+    business_id VARCHAR(255) NOT NULL,
+    name VARCHAR(255),
+    address VARCHAR(255),
+    city VARCHAR(100),
+    state VARCHAR(50),
+    postal_code VARCHAR(20),
+    latitude DECIMAL(10, 7),
+    longitude DECIMAL(10, 7),
+    stars DECIMAL(2, 1),
+    review_count INT,
+    is_open BOOLEAN,
+    attributes TEXT,
+    categories TEXT,
+    hours TEXT,
+    review_id VARCHAR(255) NOT NULL,
+    user_id VARCHAR(255),
+    review_stars DECIMAL(2, 1),
+    useful INT,
+    funny INT,
+    cool INT,
+    text TEXT,
+    date DATETIME,
+    sentiment ENUM('positive', 'negative', 'neutral'))
+;
